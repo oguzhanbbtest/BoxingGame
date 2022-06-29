@@ -42,8 +42,8 @@ public class Match {
                    if (isWin()){
                        break;
                    }
-                   System.out.println(this.f1.name  + " Saglik : " + this.f2.health);
-                   System.out.println(this.f2.name  + " Saglik : " + this.f1.health);
+                   System.out.println(this.f1.name  + " Saglik : " + this.f1.health);
+                   System.out.println(this.f2.name  + " Saglik : " + this.f2.health);
                    this.counter++;
 
                }
@@ -72,7 +72,7 @@ public class Match {
     }
 
     boolean isCoinFlip(){
-        double randomflip = Math.random()*100;
+        double randomflip = Math.random()*100; //
         return randomflip <= 50;
     }
 }
